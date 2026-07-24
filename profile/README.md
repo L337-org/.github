@@ -10,9 +10,9 @@
 
 | Project | What it is | Status |
 |---|---|---|
-| [docker-mcp](https://github.com/L337-org/docker-mcp) | MCP server exposing the Docker SDK and CLI to AI agents — on [PyPI](https://pypi.org/project/docker-mcp-server/), GHCR, and the MCP Registry | [![CI](https://github.com/L337-org/docker-mcp/actions/workflows/premerge.yaml/badge.svg)](https://github.com/L337-org/docker-mcp/actions/workflows/premerge.yaml) [![PyPI](https://img.shields.io/pypi/v/docker-mcp-server)](https://pypi.org/project/docker-mcp-server/) |
-| [send-to-influx](https://github.com/L337-org/send-to-influx) | Collects smart-home & energy devices into InfluxDB, with an optional MCP server to query and control them from an AI | [![CI](https://github.com/L337-org/send-to-influx/actions/workflows/premerge.yaml/badge.svg)](https://github.com/L337-org/send-to-influx/actions/workflows/premerge.yaml) |
-| [apt](https://github.com/L337-org/apt) | Flat APT repository aggregating `.deb` release assets from org repos, served at [apt.l337.org](https://apt.l337.org) | [![Aggregate](https://github.com/L337-org/apt/actions/workflows/aggregate.yaml/badge.svg)](https://github.com/L337-org/apt/actions/workflows/aggregate.yaml) |
+| [docker-mcp](https://github.com/L337-org/docker-mcp) | Docker-MCP-Server - An MCP server covering the full management surface of Docker. Manage, maintain and audit multiple docker environments with ease. — on [PyPI](https://pypi.org/project/docker-mcp-server/), GHCR, and the MCP Registry | [![CI](https://github.com/L337-org/docker-mcp/actions/workflows/premerge.yaml/badge.svg)](https://github.com/L337-org/docker-mcp/actions/workflows/premerge.yaml) [![PyPI](https://img.shields.io/pypi/v/docker-mcp-server)](https://pypi.org/project/docker-mcp-server/) |
+| [send-to-influx](https://github.com/L337-org/send-to-influx) | Script to take data from various smart-home APIs and post it to InfluxDB in order to visualise the data in Grafana or control you devices and perform deep analysis via the built-in MCP server. | [![CI](https://github.com/L337-org/send-to-influx/actions/workflows/premerge.yaml/badge.svg)](https://github.com/L337-org/send-to-influx/actions/workflows/premerge.yaml) |
+| [apt](https://github.com/L337-org/apt) | APT repository for publishing `.deb` packages from org repos, served at [apt.l337.org](https://apt.l337.org) | [![Aggregate](https://github.com/L337-org/apt/actions/workflows/aggregate.yaml/badge.svg)](https://github.com/L337-org/apt/actions/workflows/aggregate.yaml) |
 
 
 ## Installing from the APT repo
