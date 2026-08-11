@@ -23,12 +23,12 @@ the org's public profile page. It is not a mirror of another repo's instructions
   support inheriting either of these org-wide, so every repo — including this one — carries its
   own; there is no fallback semantics here the way there is for `CONTRIBUTING.md`/`SECURITY.md`.
 
-## Branch policy — deliberately different from the org's other repos
+## Branch policy — same as the org's other repos
 
-`main` here has **no PR-required ruleset**. It keeps a ruleset requiring signed commits and
-blocking force-push/deletion, but nothing gates a direct push with review or CI. This is a
-deliberate, standing exception (not an oversight to "fix" to match `docker-mcp`/`send-to-influx`):
-this repo holds policy and profile text that benefits from fast, direct edits, not the
-squash-merge-plus-review flow that makes sense for code changes elsewhere in the org. Opening a PR
-here is still fine and often useful for visibility, but never propose or add a PR-required
-ruleset to this repo — that would work against the reason it's set up this way.
+Pull Requests were disabled as a repository feature on this repo until 2026-08-11 (a leftover from
+however it was originally set up, not a GitHub platform restriction on `.github` repos generically
+— `github/.github` and plenty of other orgs' `.github` repos have PRs on). `main`'s ruleset already
+required signed commits and blocked force-push/deletion; now that PRs are enabled, it carries the
+same PR-required/squash-only/code-owner-review/Copilot-review shape as every other repo in the org.
+There is no standing carve-out for this repo — treat it the same as `docker-mcp`/`send-to-influx`/
+`apt`/`homebrew-tap` for branch policy purposes.
