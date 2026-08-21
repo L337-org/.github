@@ -18,5 +18,5 @@ new version of the affected project.
 
 ## Scope
 
-Only the latest release of each project is supported with security fixes — there are
+Only the latest release of each project is supported with security fixes - there are
 no long-term-support branches.
