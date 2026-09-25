@@ -5,7 +5,8 @@
 `.github` is GitHub's special **org-wide community-health-file defaults** repo for L337-org.
 It has no application code, no dependencies, and no CI — just the markdown files below plus
 the org's public profile page. It is not a mirror of another repo's instructions file; unlike
-`docker-mcp` and `send-to-influx`, there is no paired `CLAUDE.md` for this one to track.
+repos like `docker-mcp` and `send-to-influx`, there is no paired `CLAUDE.md` for this one to
+track.
 
 ## Files
 
