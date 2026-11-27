@@ -4,7 +4,7 @@
 
 ## Test plan
 
-<!-- How did you verify this? There is no CI in this repository. For `profile/README.md`, say how
+<!-- How did you verify this? CI checks only that links resolve. For `profile/README.md`, say how
      you checked it renders on the organisation page; for the org-wide defaults, say which
      repositories you confirmed the change is right for. -->
 

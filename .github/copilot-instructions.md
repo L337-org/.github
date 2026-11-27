@@ -3,10 +3,13 @@
 ## What this repo is
 
 `.github` is GitHub's special **org-wide community-health-file defaults** repo for L337-org.
-It has no application code, no dependencies, and no CI - just the markdown files below, the
-org's public profile page, and one workflow, `.github/workflows/announce-pull-requests.yaml`,
-which posts each pull request that needs action to Slack through the shared announcer in
-`L337-org/github-workflows` (`.github/dependabot.yml` keeps its reference up to date). It is not a mirror of another repo's instructions file; unlike
+It has no application code and no dependencies - just the markdown files below, the org's
+public profile page, and three workflows: `.github/workflows/announce-pull-requests.yaml` posts
+each pull request that needs action to Slack through the shared announcer in
+`L337-org/github-workflows`; `.github/workflows/link-check.yaml` fails when a link in the Markdown
+no longer resolves, weekly and on pull requests that touch it; and
+`.github/workflows/report-failures.yaml` posts a failed run of either to Slack through the shared
+reporter. `.github/dependabot.yml` keeps every action reference up to date. It is not a mirror of another repo's instructions file; unlike
 repos like `docker-mcp` and `send-to-influx`, there is no paired `CLAUDE.md` for this one to
 track.
 

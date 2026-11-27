@@ -2,7 +2,7 @@ name: 'Announce pull requests'
 
 # Posts each pull request that needs action - opened, reopened, or marked ready for review - to
 # Slack through the shared announcer in L337-org/github-workflows, which says what it skips and
-# why.  This repository's only workflow; it builds and tests nothing.
+# why.  It builds and tests nothing.
 on:
   pull_request:
     types: [opened, reopened, ready_for_review]
