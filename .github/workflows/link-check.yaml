@@ -1,0 +1,33 @@
+name: 'Link check'
+
+# Fails when a link in this repository's Markdown no longer resolves.  The org profile and the
+# org-wide CONTRIBUTING and SECURITY change rarely while what they link to moves, so a weekly run
+# catches a link that broke without anyone editing these files; a pull request run catches one
+# broken by the edit itself.
+on:
+  schedule:
+    # Mondays 07:23 UTC.  Off the hour, because every scheduled job in the world is on it.
+    - cron: '23 7 * * 1'
+  pull_request:
+    paths:
+      - '**.md'
+      - '.github/workflows/link-check.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lychee:
+    name: Check links
+    runs-on: ubuntu-latest
+    # A few dozen links, each retried on a transient failure.
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # The action's defaults fail the job on any broken link and on finding no links at all, so
+      # a glob that stops matching fails rather than passing empty.  It authenticates github.com
+      # requests with the workflow token, which keeps them clear of the anonymous rate limit.
+      - uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: --no-progress './**/*.md'
